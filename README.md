@@ -6,7 +6,7 @@ Since my old blog has since been taken down and some of the results were recentl
 
 For details on the testing conditions, please refer to this [archived page](https://web.archive.org/web/20130625190027/http://whyeye.org/blog/browsers/history-of-javascript-performance-chrome/) of the original article.
 
-You can find a more recent comparison on [arewefastyet.com](http://arewefastyet.com/)!
+You can find a more recent (and fully automated) comparisons on [arewefastyet.com](http://arewefastyet.com/)!
 
 ## License
 This work by Jan T. Sott is licensed under a [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0).

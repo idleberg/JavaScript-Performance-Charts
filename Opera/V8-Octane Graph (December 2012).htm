@@ -1,0 +1,63 @@
+<!--
+You are free to copy and use this sample in accordance with the terms of the
+Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <meta property="og:type"content="article"> 
+  <meta property="og:url"content="http://whyeye.org/browsers/history-of-javascript-performance-opera/">
+  <meta property="og:site_name" content="Opera Performance History: Google Benchmarks"/>
+  <meta property="article:author" content="Jan T. Sott">
+  <meta property="article:article:published_time"content="December 29th, 2012 at 12:53am CEST">
+  <title>
+    Opera Performance History
+  </title>
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load('visualization', '1', {packages: ['corechart']});
+  </script>
+  <script type="text/javascript">
+    function drawVisualization() {
+        // Create and populate the data table.
+        var data = google.visualization.arrayToDataTable([
+          ['Browser', 'V8 v3', 'V8 v5', 'V8 v7', 'Octane v1'],
+          ['Opera 7.03', 12.9, 12.5, 12.7, 0],
+          ['Opera 7.11', 9.59, 12.9, 12.8, 0],
+          ['Opera 7.23', 26.5, 28.1, 30.4, 0],
+          ['Opera 7.54', 28.7, 31.5, 32.1, 0],
+          ['Opera 8.02', 28.7, 31.5, 73.0, 0],
+          ['Opera 8.54', 92.1, 73.0, 70.8, 0],
+          ['Opera 9.02', 71.6, 68.9, 83.2, 0],
+          ['Opera 9.10', 79.0, 76.3, 84.9, 0],
+          ['Opera 9.27', 73.5, 79.9, 81.9, 0],
+          ['Opera 9.52', 229, 228, 244, 0],
+          ['Opera 9.64', 223, 231, 232, 0],
+          ['Opera 10.63', 3023, 3638, 3313, 3811],
+          ['Opera 11.11', 3054, 3412, 3015, 3513],
+          ['Opera 11.64', 3205, 3871, 3521, 3351],
+          ['Opera 12.02', 3228, 3667, 3444, 3597], 
+          ['Opera 12.11', 3220, 3845, 3595, 3766]
+          ]);
+
+        // Create and draw the visualization.
+        new google.visualization.BarChart(document.getElementById('visualization')).
+        draw(data,
+         {title:"Google Benchmarks (longer is better)",
+         width:960, height:1200,}
+         );
+      }
+      
+
+      google.setOnLoadCallback(drawVisualization);
+    </script>
+  </head>
+  <body style="font-family: Arial;border: 0 none;">
+    <h1>Opera Performance History
+    </title></h1>
+    <div id="visualization" style="width: 800px; height: 1200px;"></div>
+    <p style="font-size:small"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Opera Performance History</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://whyeye.org" property="cc:attributionName" rel="cc:attributionURL">Jan T. Sott</a> is licensed under a<br /><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.</p>
+  </body>
+  </html>

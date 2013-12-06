@@ -1,0 +1,67 @@
+<!--
+You are free to copy and use this sample in accordance with the terms of the
+Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta property="og:type"content="article"> 
+	<meta property="og:url"content="http://whyeye.org/blog/chrome-performance-history/">
+	<meta property="og:site_name" content="Chrome Performance History: Kraken JavaScript Benchmark (version 1.1)"/>
+	<meta property="article:author" content="Jan T. Sott">
+	<meta property="article:article:published_time"content="September 13th, 2012 at 8:14pm CEST">
+	<title>
+		Chrome Performance History: Kraken JavaScript Benchmark (version 1.1)
+	</title>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+		google.load('visualization', '1', {packages: ['table']});
+	</script>
+	<script type="text/javascript">
+		function drawVisualization() {
+      // Create and populate the data table.
+      var data = google.visualization.arrayToDataTable([
+      	['Browser', 'Milliseconds'],
+      	['Chrome 1.0.154.59', 0],
+      	['Chrome 2.0172.33', 0],
+      	['Chrome 3.0.182', 27886.5],
+      	['Chrome 4.0.223', 23142.2],
+      	['Chrome 5.0.375.126', 17980.7],
+      	['Chrome 6.0.453.1', 17277.1],
+      	['Chrome 7.0.517.44', 15186.9],
+      	['Chrome 8.0.552.237', 14434.6],
+      	['Chrome 9.0.597.107', 14471.1],
+      	['Chrome 10.0.648.151', 5838.4],
+      	['Chrome 11.0.696.77', 5886.4],
+      	['Chrome 12.0.742.112', 9300.0],
+      	['Chrome 13.0.782.99', 9362.7],
+      	['Chrome 14.0.835.202', 5120.4],
+      	['Chrome 15.0.874.121', 4753.8],
+      	['Chrome 16.0.912.77', 4857.7],
+      	['Chrome 17.0.963.83', 4352.9],
+      	['Chrome 18.01025.168', 4107.6],
+      	['Chrome 19.0.1084.56', 3758.9],
+      	['Chrome 20.0.1132.57', 3695.9],
+      	['Chrome 21.0.1189.89', 3519.4],
+      	['Firefox 15.0.1', 4930.1],
+      	['Opera 12.02', 12774.9]
+      	]);
+      
+      // Create and draw the visualization.
+      visualization = new google.visualization.Table(document.getElementById('table'));
+      visualization.draw(data, null);
+  }
+  
+
+  google.setOnLoadCallback(drawVisualization);
+</script>
+</head>
+<body style="font-family: Arial;border: 0 none;">
+	<h1>Chrome Performance History</h1>
+	<div id="table"></div>
+	<p style="font-size:small"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Chrome Performance History</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://whyeye.org" property="cc:attributionName" rel="cc:attributionURL">Jan T. Sott</a> is licensed under a<br /><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.</p>
+</body>
+</html>
+​

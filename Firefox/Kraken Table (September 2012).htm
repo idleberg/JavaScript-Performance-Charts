@@ -1,0 +1,61 @@
+<!--
+You are free to copy and use this sample in accordance with the terms of the
+Apache license (http://www.apache.org/licenses/LICENSE-2.0.html)
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <meta property="og:type"content="article"> 
+  <meta property="og:url"content="http://whyeye.org/blog/firefox-performance-history/">
+  <meta property="og:site_name" content="Firefox Performance History: Kraken JavaScript Benchmark (version 1.1)"/>
+  <meta property="article:author" content="Jan T. Sott">
+  <meta property="article:article:published_time"content="September 12th, 2012 at 10:56pm CEST">
+    <title>
+      Firefox Performance History: Kraken JavaScript Benchmark (version 1.1)
+    </title>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('visualization', '1', {packages: ['table']});
+    </script>
+    <script type="text/javascript">
+    function drawVisualization() {
+      // Create and populate the data table.
+      var data = google.visualization.arrayToDataTable([
+              ['Browser', 'Milliseconds'],
+              ['Firefox 3.5.19', 28835.3],
+              ['Firefox 3.6.28', 25075.7],
+              ['Firefox 4.0.1', 7509.8],
+              ['Firefox 5.0.1', 7973.9],
+              ['Firefox 6.0.2', 7351.9],
+              ['Firefox 7.0.1', 6981.7],
+              ['Firefox 8.0.1', 6883.0],
+              ['Firefox 9.0.1', 5039.7],
+              ['Firefox 10.0.7', 4600.7],
+              ['Firefox 11.0', 5114.7],
+              ['Firefox 12.0', 5380.6],
+              ['Firefox 13.0.1', 5452.3],
+              ['Firefox 14.0.1', 5350.3],
+              ['Firefox 15.0.1', 4930.1],
+              ['Firefox 16.0b3', 4884.6],
+              ['Opera 12.02', 12774.9],
+              ['Chrome 21.0', 3519.4]
+      ]);
+    
+      // Create and draw the visualization.
+      visualization = new google.visualization.Table(document.getElementById('table'));
+      visualization.draw(data, null);
+    }
+    
+
+    google.setOnLoadCallback(drawVisualization);
+    </script>
+  </head>
+  <body style="font-family: Arial;border: 0 none;">
+    <h1>Firefox Performance History</h1>
+  <div id="table"></div>
+  <p style="font-size:small"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Firefox Performance History</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://whyeye.org" property="cc:attributionName" rel="cc:attributionURL">Jan T. Sott</a> is licensed under a<br /><a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.</p>
+  </body>
+</html>
+​

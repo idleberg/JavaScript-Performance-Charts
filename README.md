@@ -10,3 +10,6 @@ You can find a more recent (and fully automated) comparisons on [arewefastyet.co
 
 ## License
 This work by Jan T. Sott is licensed under a [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0).
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/idleberg/javascript-performance-charts/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
